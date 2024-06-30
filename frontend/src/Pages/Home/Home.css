@@ -1,0 +1,9 @@
+.home{
+    background-color: var(--softbackground);
+    padding: 20px 70px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}

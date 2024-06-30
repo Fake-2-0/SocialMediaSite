@@ -1,0 +1,25 @@
+/* Defalut: lightMode */
+body{
+    --background: white;
+    --softbackground: #f6f3f3;
+    --textcolor: black;
+    --logocolor: blueviolet;
+    --softtextcolor: #555;
+    --border: lightgray;
+}
+
+/* Dark Mode */
+body.dark{
+    --background: #222;
+    --softbackground: #333;
+    --textcolor: whitesmoke;
+    --logocolor: blueviolet;
+    --softtextcolor: lightgray;
+    --border: #444;
+}
+
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+

@@ -1,0 +1,72 @@
+.post .user-container{
+    padding: 20px;
+    background: var(--background);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;  
+}
+
+.user-container .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .user-container .user-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-container .user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-container .user-info .details{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.user-container .user-info .details .user-name{
+    color: var(--textcolor);
+    font-weight: 500;
+}
+
+.user-container .user-info .details .date{
+    color: var(--softtextcolor);
+    font-size: 14px;
+}
+
+.post .user-container .content {
+    margin: 20px 0;
+    color: var(--textcolor);
+}
+
+.post .user-container .content img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.post .info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.post .info .item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--textcolor);
+}
+
+.post .info .item .like{
+    font-variation-settings: 
+    'FILL' 0
+}

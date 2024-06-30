@@ -1,0 +1,74 @@
+.leftbar{
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: var(--background);
+    color: var(--textcolor);
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.leftbar .container{  
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    
+}
+
+.leftbar .user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.leftbar .user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu .item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.short-cuts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.short-cuts .item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu .item img{
+    width: 30px;
+}
+
+.short-cuts .item img{
+    width: 30px;
+}
+
+.short-cuts h1{
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--softtextcolor);
+}

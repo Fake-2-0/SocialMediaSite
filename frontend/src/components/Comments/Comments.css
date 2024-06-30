@@ -1,0 +1,70 @@
+.comments .comment-box{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.comments .comment-box input{
+    background: transparent;
+    color: var(--softtextcolor);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.comments .comment-box button{
+    background-color: var(--logocolor);
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: var(--background);
+    font-weight: 500;
+}
+
+.comments .comment-box img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comments .comment{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.comment img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment .user-info{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment .user-info .user-name{
+    color: var(--textcolor);
+    align-self: flex-start;
+    font-weight: 500;
+}
+
+.comment .user-info .comment-desc{
+    color: var(--softtextcolor);
+    align-self: flex-start;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.comment .date{
+    color: var(--softtextcolor);
+    font-size: 14px;
+}

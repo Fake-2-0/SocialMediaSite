@@ -1,0 +1,113 @@
+.rightbar{
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: var(--softbackground);
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.rightbar .container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightbar .item{
+    background-color: var(--background);
+    padding: 15px;  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.rightbar .item  > span{
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: var(--softtextcolor);
+}
+
+.rightbar .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightbar .user > span{
+    color: var(--softtextcolor);
+}
+
+.rightbar .user .user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.rightbar .user .user-info p{
+    color: var(--softtextcolor);
+}
+
+/* .rightbar .user .user-info p span{
+    font-weight: 500;
+    color: black;
+    margin-right: 10px;
+} */
+
+.rightbar .user .user-info span{
+    font-weight: 500;
+    color: var(--textcolor);
+}
+
+.rightbar .user .user-info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rightbar .user .user-buttons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}   
+
+.rightbar .user .user-buttons button:first-child{
+    background-color: var(--logocolor);
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: var(--background);
+    font-weight: 500;
+   
+}
+
+.rightbar .user .user-buttons button:nth-child(2){
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.rightbar .user .user-info .online-icon{
+    background-color: greenyellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+
+
+
