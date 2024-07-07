@@ -9,10 +9,17 @@ import Profile from "./Pages/Profile/Profile";
 import './style.css'
 import { useContext } from "react";
 import { LoginContext } from "./Context/LoginContext";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 
 const Layout = ()=>{
   return (
+    <QueryClientProvider client={queryClient}>
     <div>
       <Navbar/>
       <div style={{display: "flex"}}>
@@ -23,6 +30,7 @@ const Layout = ()=>{
         <Rightbar/>
       </div>
     </div>
+    </QueryClientProvider>
   )
 }
 
