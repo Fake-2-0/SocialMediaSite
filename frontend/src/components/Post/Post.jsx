@@ -2,11 +2,17 @@ import { useState } from 'react'
 import { Comments } from '../Comments/Comments'
 import './Post.css'
 import { Link } from 'react-router-dom'
+import moment from "moment";
 
 export const Post = ({ post }) => {
     const liked = false
 
     const [commentsOpen, setCommentsOpen] = useState(false);
+
+    const postLiked = () => {
+        let q = document.querySelector(".likes");
+        q.classList.toggle("like");
+    }
     
     return (
         <div className="post">
@@ -18,7 +24,7 @@ export const Post = ({ post }) => {
                             <Link to={`/profile/${post.userId}`} style={{ textDecoration: "none" }}>
                                 <span className='user-name'>{post.name}</span>
                             </Link>
-                            <span className='date'>1min ago</span>  
+                            <span className='date'>{moment(post.date).fromNow()}</span>  
                         </div>
                     </div>
                     <span class="material-symbols-outlined">
@@ -27,11 +33,11 @@ export const Post = ({ post }) => {
                 </div>
                 <div className="content">
                     <p>{post.desc}</p>
-                    <img src={post.img} alt="" />
+                    <img src={"./upload/" + post.img} alt="" />
                 </div>
                 <div className="info">
-                    <div className="item">
-                        <span class="material-symbols-outlined like">
+                    <div className="item" onClick={postLiked} >
+                        <span class="material-symbols-outlined likes">
                             favorite
                         </span>
                         12 Likes
@@ -49,7 +55,7 @@ export const Post = ({ post }) => {
                         5 Shares
                     </div>
                 </div>
-                {commentsOpen && <Comments/>}
+                {commentsOpen && <Comments postId={post.id}/>}
             </div>
         </div>
     )

@@ -1,0 +1,78 @@
+.share{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: var(--textcolor);
+    background-color: var(--background);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.share .container{
+    padding: 20px;
+}
+
+.container .top{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .top hr{
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: var(--border);
+}
+
+.container .top img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .top input{
+    border: none;
+    outline: none;
+    padding: 20px 10px;
+    background-color: transparent;
+    width: 60%;
+    color: var(--textcolor);
+}
+
+
+.container .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .bottom .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .bottom .left .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.container .bottom .left .item img{
+    height: 20px;
+}
+
+.container .bottom .left .item span{
+    font-size: 12px;
+    color: gray;
+}
+
+.container .bottom .right button{
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #5271ff;
+    border-radius: 3px;
+}

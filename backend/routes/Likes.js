@@ -3,6 +3,6 @@ import  {getLikes}  from "../Controllers/Likes.js";
 
 const router = express.Router();
 
-router.get("/find/:likeId", getLikes);
+router.get("/", getLikes);
 
 export default router

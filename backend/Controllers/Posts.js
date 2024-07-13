@@ -1,7 +1,6 @@
 import moment from "moment/moment.js";
 import {db} from "../Connect.js"
 import  jwt from "jsonwebtoken"
-import { format } from "mysql";
 
 export const getPosts = (req, res) =>{
     const token = req.cookies.accessToken;
@@ -27,7 +26,7 @@ export const addPost = (req, res) =>{
     jwt.verify(token, "secretkey", (err, userInfo)=>{
         if(err) return res.status(403).json("Token is not vaild");
 
-        const q = "INSERT INTO posts (`desc`,`img`, `userId`, `date`) VALUES ?"
+        const q = "INSERT INTO posts (`desc`,`img`, `userId`, `date`) VALUES (?)"
 
         const values = [
             req.body.desc,
